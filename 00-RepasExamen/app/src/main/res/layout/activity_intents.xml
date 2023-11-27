@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INTENTS"
+        android:textSize="25sp"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:textColor="#818285"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="NAVEGADOR"
+        android:id="@+id/navegador"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/telefon"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="TELEFON"
+        android:id="@+id/telefon"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/email"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="EMAIL"
+        android:id="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/gps"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="GPS"
+        android:id="@+id/gps"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="BUSCADOR"
+        android:id="@+id/buscador"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/gps"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textBuscar"
+        android:layout_below="@id/buscador"
+        android:hint="Introduce el texto"
+        android:textAlignment="center"
+        android:minHeight="48dp" />
+</RelativeLayout>

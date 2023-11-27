@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".WidgetActivity">
+
+    <!-- Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEXTO A ENVIAR"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:textColor="#818285"
+        android:textSize="18sp"/>
+
+    <!-- Input -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textEnviar"
+        android:hint="Introduce el texto"
+        android:textAlignment="center"
+        android:minHeight="48dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enviar"
+        android:text="ENVIAR"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"/>
+
+</LinearLayout>

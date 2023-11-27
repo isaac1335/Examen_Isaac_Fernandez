@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlockverticalActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BLOCK VERTICAL"
+            android:textSize="25sp"
+            android:typeface="monospace"
+            android:textStyle="bold"
+            android:textColor="#818285"
+            android:textAlignment="center"
+            android:layout_marginTop="50dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:gravity="center">
+
+            <TableRow>
+                <ImageView
+                    android:layout_width="215dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/perro"
+                    android:layout_marginStart="30dp"/>
+
+                <TextView
+                    android:text="PERRO"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:textColor="#818285"
+                    android:textSize="18sp"
+                    android:layout_marginStart="55dp"
+
+                    android:layout_gravity="center|end"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:layout_width="215dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/gato"
+                    android:layout_marginStart="30dp"/>
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="GATO"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:textColor="#818285"
+                    android:textSize="18sp"
+                    android:layout_marginStart="55dp"
+                    android:layout_gravity="center|end"/>
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>
